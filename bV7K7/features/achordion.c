@@ -339,7 +339,7 @@ __attribute__((weak)) bool achordion_chord(uint16_t tap_hold_keycode,
     case LT(1,KC_SPACE):
       return true; 
       break;
-    case LT(3,KC_TAB)):
+    case LT(3,KC_TAB):
       return true;
       break;
     case MT(MOD_LSFT, KC_BSPC):
