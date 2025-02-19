@@ -332,20 +332,30 @@ bool achordion_opposite_hands(const keyrecord_t* tap_hold_record,
 // By default, use the BILATERAL_COMBINATIONS rule to consider the tap-hold key
 // "held" only when it and the other key are on opposite hands.
 __attribute__((weak)) bool achordion_chord(uint16_t tap_hold_keycode,
-                                           keyrecord_t* tap_hold_record,
-                                           uint16_t other_keycode,
-                                           keyrecord_t* other_record) {
-  
-  case K41:
+                                             keyrecord_t* tap_hold_record,
+                                             uint16_t other_keycode,
+                                             keyrecord_t* other_record) {
+  switch (tap_hold_keycode) {
+    case K41:
+      // Add functionality for K41 if needed
       break;
-  case K42:
+    case K42:
+      // Add functionality for K42 if needed
       break;
-  case K91:
+    case K91:
+      // Add functionality for K91 if needed
       break;
-  case K92:
-      break;    
+    case K92:
+      // Add functionality for K92 if needed
+      break;
+    default:
+      // Optionally handle unexpected keycodes
+      break;
+  }
+
   return achordion_opposite_hands(tap_hold_record, other_record);
 }
+
 
 // By default, the timeout is 1000 ms for all keys.
 __attribute__((weak)) uint16_t achordion_timeout(uint16_t tap_hold_keycode) {
