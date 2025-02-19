@@ -8,7 +8,7 @@
 #define PERMISSIVE_HOLD
 
 #define USB_SUSPEND_WAKEUP_DELAY 0
-#define SERIAL_NUMBER "bV7K7/yoomOx"
+#define SERIAL_NUMBER "bV7K7/3vvVdD"
 #define LAYER_STATE_8BIT
 #define COMBO_COUNT 4
 
