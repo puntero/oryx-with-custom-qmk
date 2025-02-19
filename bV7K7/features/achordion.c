@@ -336,20 +336,17 @@ __attribute__((weak)) bool achordion_chord(uint16_t tap_hold_keycode,
                                              uint16_t other_keycode,
                                              keyrecord_t* other_record) {
   switch (tap_hold_keycode) {
-    case K41:
+    case LT(1,KC_SPACE):
       // Add functionality for K41 if needed
       break;
-    case K42:
+    case MT(MOD_LCTL, KC_ENTER):
       // Add functionality for K42 if needed
       break;
-    case K91:
+    case MT(MOD_LSFT, KC_BSPC):
       // Add functionality for K91 if needed
       break;
-    case K92:
+    case LT(2,KC_R):
       // Add functionality for K92 if needed
-      break;
-    default:
-      // Optionally handle unexpected keycodes
       break;
   }
 
