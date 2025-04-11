@@ -206,3 +206,18 @@ tap_dance_action_t tap_dance_actions[] = {
         [DANCE_0] = ACTION_TAP_DANCE_FN_ADVANCED(on_dance_0, dance_0_finished, dance_0_reset),
         [DANCE_1] = ACTION_TAP_DANCE_FN_ADVANCED(on_dance_1, dance_1_finished, dance_1_reset),
 };
+
+__attribute__((weak)) bool chordal_hold_chord(uint16_t tap_hold_keycode,
+                                              keyrecord_t* tap_hold_record,
+                                              uint16_t other_keycode,
+                                              keyrecord_t* other_record) {
+  switch (tap_hold_keycode) {
+    case LT(1, KC_SPACE):
+    case LT(3, KC_TAB):
+    case MT(MOD_LSFT, KC_BSPC):
+    case LT(2, KC_R):
+      return true;
+    default:
+      return chordal_hold_opposite_hands(tap_hold_record, other_record);
+  }
+}
