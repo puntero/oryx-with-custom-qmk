@@ -22,7 +22,7 @@ enum tap_dance_codes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_voyager(
     KC_ESCAPE,      KC_1,           KC_2,           KC_3,           KC_4,           KC_5,                                           KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_MINUS,       
-    KC_TAB,         KC_B,           KC_Y,           KC_O,           KC_U,           KC_SCLN,                                        KC_X,           KC_L,           KC_D,           KC_P,           KC_F,           MT(MOD_RGUI, KC_BSLS),
+    KC_TAB,         KC_B,           KC_Y,           KC_O,           KC_U,           KC_SCLN,                                        KC_X,           KC_L,           KC_D,           KC_P,           KC_F,           MT(MOD_LALT, KC_LEFT_GUI),
     MT(MOD_LSFT, KC_BSPC),MT(MOD_LGUI, KC_C),MT(MOD_LALT, KC_I),MT(MOD_LCTL, KC_E),MT(MOD_LSFT, KC_A),KC_COMMA,                                       KC_K,           MT(MOD_RSFT, KC_H),MT(MOD_RCTL, KC_T),MT(MOD_RALT, KC_N),MT(MOD_RGUI, KC_S),MT(MOD_RSFT, KC_ENTER),
     KC_LEFT_GUI,    MT(MOD_LALT, KC_SLASH),KC_EQUAL,       KC_QUOTE,       KC_DOT,         KC_MINUS,                                       KC_J,           KC_M,           KC_G,           KC_W,           MT(MOD_RALT, KC_V),KC_RIGHT_CTRL,  
                                                     LT(1,KC_SPACE), LT(3,KC_TAB),                                   MT(MOD_LSFT, KC_BSPC),LT(2,KC_R)
@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                     KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_0
   ),
   [2] = LAYOUT_voyager(
-    KC_GRAVE,       KC_LBRC,        KC_LPRN,        KC_RPRN,        KC_RBRC,        KC_DOT,                                         KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, QK_BOOT,        
+    KC_GRAVE,       KC_LBRC,        KC_LPRN,        KC_RPRN,        KC_RBRC,        KC_DOT,                                         KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_PSCR,        
     KC_EXLM,        KC_COMMA,       KC_LCBR,        KC_RCBR,        KC_SCLN,        KC_QUES,                                        KC_GRAVE,       KC_HOME,        KC_UP,          KC_END,         KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_HASH,        KC_CIRC,        KC_EQUAL,       KC_UNDS,        KC_DLR,         KC_ASTR,                                        KC_DQUO,        KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_ENTER,       KC_TRANSPARENT, 
     KC_TILD,        KC_LABK,        KC_PIPE,        KC_MINUS,       KC_RABK,        KC_SLASH,                                       KC_QUOTE,       LCTL(LSFT(KC_TAB)),LCTL(KC_TAB),   ST_MACRO_3,     KC_TRANSPARENT, KC_TRANSPARENT, 
